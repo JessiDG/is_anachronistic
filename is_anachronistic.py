@@ -1,7 +1,6 @@
 import string
-import fileinput
 
-class Is_Regency:
+class Is_Anachronistic:
 
     def __init__(self, manuscript, dictionary):
         self.manuscript = self.to_unique_set(manuscript)
@@ -46,5 +45,5 @@ if __name__ == "__main__":
     ms_read = ms.read()
     comparison_text = open('comparison_text.txt', 'r', encoding='utf8')
     comparison_text_read = comparison_text.read()
-    ms_compare = Is_Regency(ms_read, comparison_text_read)
+    ms_compare = Is_Anachronistic(ms_read, comparison_text_read)
     print(ms_compare)
