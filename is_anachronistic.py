@@ -11,7 +11,7 @@ class Is_Anachronistic:
         if type(text) is not str:
             raise TypeError("Please input a string")
 
-        to_remove = string.punctuation + '-' + "\"" + "\'" + string.digits
+        to_remove = string.punctuation + '-' + "\"" + "\'" + "“" + "‘" + "’" + string.digits
         stripped_string = ""
         for char in str(text):
             if char in to_remove:
